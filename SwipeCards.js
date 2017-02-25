@@ -18,7 +18,7 @@ import clamp from 'clamp';
 import Defaults from './Defaults.js';
 
 var HORIZONTAL_TRESHOLD = 100;
-var VERTICAL_TRESHOLD = 5000;
+var VERTICAL_TRESHOLD = 200;
 const WindowHeight  = Dimensions.get('window').height;
 
 // Base Styles. Use props to override these values
@@ -196,7 +196,7 @@ class SwipeCards extends Component {
     let opacity = pan.x.interpolate({inputRange: [-200, 0, 200], outputRange: [0.5, 1, 0.5]});
     let scale = enter;
 
-    let animatedCardstyles = {transform: [{translateX}, {rotate}, {scale}], opacity};
+    let animatedCardstyles = {transform: [{translateX}, {translateY}, {rotate}, {scale}], opacity};
 
     let yupOpacity = pan.x.interpolate({inputRange: [0, 100], outputRange: [0, 1]});
     let animatedYupStyles = {opacity: yupOpacity}
