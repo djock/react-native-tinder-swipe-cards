@@ -18,7 +18,7 @@ import clamp from 'clamp';
 import Defaults from './Defaults.js';
 
 var HORIZONTAL_TRESHOLD = 100;
-var VERTICAL_TRESHOLD = 200;
+var VERTICAL_TRESHOLD = 5000;
 const WindowHeight  = Dimensions.get('window').height;
 
 // Base Styles. Use props to override these values
