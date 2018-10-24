@@ -2,7 +2,7 @@
 'use strict';
 
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types';
 import {
     StyleSheet,
     Text,
@@ -247,29 +247,29 @@ class SwipeCards extends Component {
 }
 
 SwipeCards.propTypes = {
-    cards: React.PropTypes.array,
-    renderCards: React.PropTypes.func,
-    loop: React.PropTypes.bool,
-    renderNoMoreCards: React.PropTypes.func,
-    showYup: React.PropTypes.bool,
-    showNope: React.PropTypes.bool,
-    handleRight: React.PropTypes.func,
-    handleLeft: React.PropTypes.func,
-    handleUp: React.PropTypes.func,
-    handleDown: React.PropTypes.func,
-    yupView: React.PropTypes.element,
-    yupText: React.PropTypes.string,
-    noView: React.PropTypes.element,
-    noText: React.PropTypes.string,
+    cards: PropTypes.array,
+    renderCards: PropTypes.func,
+    loop: PropTypes.bool,
+    renderNoMoreCards: PropTypes.func,
+    showYup: PropTypes.bool,
+    showNope: PropTypes.bool,
+    handleRight: PropTypes.func,
+    handleLeft: PropTypes.func,
+    handleUp: PropTypes.func,
+    handleDown: PropTypes.func,
+    yupView: PropTypes.element,
+    yupText: PropTypes.string,
+    noView: PropTypes.element,
+    noText: PropTypes.string,
     containerStyle: View.propTypes.style,
     cardStyle: View.propTypes.style,
     yupStyle: View.propTypes.style,
     yupTextStyle: Text.propTypes.style,
     nopeStyle: View.propTypes.style,
     nopeTextStyle: Text.propTypes.style,
-    frictionValue: React.PropTypes.number,
-    rotation: React.PropTypes.bool,
-    dragY: React.PropTypes.bool
+    frictionValue: PropTypes.number,
+    rotation: PropTypes.bool,
+    dragY: PropTypes.bool
 };
 
 SwipeCards.defaultProps = {
